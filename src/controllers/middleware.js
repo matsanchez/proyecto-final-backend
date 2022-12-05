@@ -1,5 +1,5 @@
 const auth = (req, res, next) => {
-  let admin = false;
+  let admin = false; /* valor true, para restringir acceso a rutas de solo administrador */
   if (admin)
     return res
       .status(401)
